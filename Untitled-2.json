@@ -1,0 +1,82 @@
+{
+"success": true,
+  "message": null,
+  "total": 1,
+  "lp_proc": null,
+  "data": [
+    {
+        "algorithmName" : "s2s-attn",
+        "evaluationMetrics" : "rmse",
+        "trainInfoResponses": [
+            {  
+                "exceptBusinessDateList": [
+                    "2023-01-01",
+                    "2022-12-12",
+                    "2023-02-12",
+                    "2023-02-15"
+                ],
+                "exceptFailureDateList": [
+                    "2023-01-01",
+                    "2022-12-12",
+                    "2023-02-12",
+                    "2023-02-15"
+                ],
+                "trainMode": "주중/주말",
+                "totalDurationTime" : 9.23,
+                "outlierMode" : true,
+                "detailMetricResponses": [
+                    {
+                        "metricName": "error_count",
+                        "score" : "0.03",
+                        "hyperParams": {
+                            "batchSize": 2048,
+                            "epochs": 50,
+                            "hiddenSize": 64,
+                            "learningRate": 0.005,
+                            "windowSize": 30,
+                            "bandComplexity": null,
+                            "bandWidth": null,
+                            "droupOut": null,
+                            "logLength": null,
+                            "attentionSize": null
+                        }        
+                    },
+                    ...
+                ]
+            }
+        ]
+        
+    },
+    {
+        "algorithmName" : "dbsln",
+        "evaluationMetrics" : "mse",
+        "trainInfoResponses": [
+            {  
+                "exceptBusinessDateList": [
+                    "2023-01-01",
+                    "2022-12-12",
+                    "2023-02-12",
+                    "2023-02-15"
+                ],
+                "exceptFailureDateList": [
+                    "2023-01-01",
+                    "2022-12-12",
+                    "2023-02-12",
+                    "2023-02-15"
+                ],
+                "trainMode": "주중/주말",
+                "totalDurationTime" : 9.23,
+                "outlierMode" : true,
+                "detailMetricResponses": [
+                    {
+                        "metricName": "error_count",
+                        "score" : "0.03",
+                        "hyperParams": null
+                    },
+                    ...
+                ]
+            }
+        ]
+    }
+  ]
+}
